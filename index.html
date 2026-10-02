@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="gallery.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Photo Gallery</h1>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Khung hiển thị lớn chính -->
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
+
+        <!-- Danh sách ảnh thu nhỏ -->
+        <div class="thumbnail-container">
+            <img class="preview" 
+                 alt="Stylized landscape with a purple sky and mountains" 
+                 src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" 
+                 onmouseover="upDate(this)" 
+                 onmouseout="unDo()">
+
+            <img class="preview" 
+                 alt="Beautiful beach sunset with calm waters" 
+                 src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" 
+                 onmouseover="upDate(this)" 
+                 onmouseout="unDo()">
+
+            <img class="preview" 
+                 alt="Lush green forest during a hazy morning" 
+                 src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800" 
+                 onmouseover="upDate(this)" 
+                 onmouseout="unDo()">
+        </div>
+    </main>
+
+</body>
+</html>
